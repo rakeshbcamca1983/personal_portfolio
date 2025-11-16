@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rakesh Prajapat — Portfolio</title>
+<meta name="description" content="Rakesh Prajapat is a Full Stack Developer with 8.6 years of experience specializing in React.js, Node.js, PHP, and WordPress. Explore portfolio, projects, and professional experience in scalable web app development, UI/UX, cloud deployment, and DevOps." />
+
+<meta name="keywords" content="Rakesh Prajapat, Full Stack Developer in indore,Full Stack Developer in india, Freelancer in indore, PHP developer, Shopify Developer,Freelancer in india, Web Developer in indore, Web Developer in india,Web Developer, React.js, Node.js, PHP Developer, WordPress Developer, Software Engineer, Portfolio, Web Design, AWS Developer, Indore Developer, CodeIgniter, Docker, Kubernetes, DevOps" />
+<meta name="author" content="Rakesh Prajapat" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="English" />
+<meta name="theme-color" content="#0078ff" />
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rakesh Prajapat — Full Stack Developer & Freelancer Portfolio" />
+<meta property="og:description" content="Explore the professional portfolio of Rakesh Prajapat — Full Stack Developer with 8.6 years of experience in React.js, Node.js, PHP, and WordPress. Building scalable, high-performance web applications." />
+<meta property="og:url" content="https://rakeshprajapat.in/" />
+<meta property="og:image" content="https://rakeshprajapat.in/image/portfolio-preview.jpg" />
+<meta property="og:site_name" content="Rakesh Prajapat Portfolio" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Rakesh Prajapat — Full Stack Developer | Freelancer Portfolio" />
+<meta name="twitter:description" content="Experienced Full Stack Developer skilled in React.js, Node.js, PHP, and WordPress. Explore my projects and expertise in scalable software development." />
+<meta name="twitter:image" content="https://rakeshprajapat.in/assets/img/portfolio-preview.jpg" />
+<meta name="twitter:creator" content="@rakeshprajapat" />
+<meta name="linkedin:profile" content="https://www.linkedin.com/in/rakesh-prajapat-7502a422b/" />
+<meta property="fb:page_id" content="https://www.facebook.com/profile.php?id=100077760160657" />
+
+<link rel="canonical" href="https://rakeshprajapat.in/" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="icon" type="image/png" href="https://rakeshprajapat.in/favicon.png" sizes="32x32">
+<style>
+  :root{
+    --accent: #0078ff;       /* chosen blue */
+    --bg: #ffffff;
+    --card: #f8fbff;
+    --muted: #556070;
+    --text: #111827;
+    --border: #e6eefb;
+    --glass: rgba(255,255,255,0.7);
+    --radius: 12px;
+    --maxw: 1100px;
+  }
+
+  /* Reset + base */
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color:var(--text);
+    background:linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.55;
+    scroll-behavior:smooth;
+  }
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* Container */
+  .wrap{max-width:var(--maxw); margin:24px auto; padding:20px;}
+
+/* NAV */
+  nav{
+    position:fixed;
+    top:12px;
+    left:50%;
+    transform:translateX(-50%);
+    width:calc(100% - 36px);
+    max-width:var(--maxw);
+    background:rgba(255,255,255,0.98);
+    border:1px solid var(--border);
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:10px 14px;
+    z-index:1100;
+    box-shadow: 0 6px 20px rgba(16,24,40,0.06);
+  }
+  .brand{display:flex; gap:12px; align-items:center}
+  .logo{
+    width:44px; height:44px; border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(135deg,var(--accent), #005fcc);
+    color:white; font-weight:700; font-size:16px;
+  }
+  .brand h1{margin:0; font-size:16px; letter-spacing:0.2px}
+  .brand p{margin:0; font-size:12px; color:var(--muted)}
+
+  nav ul{display:flex; gap:12px; list-style:none; margin:0; padding:0; align-items:center}
+  nav a.navlink{padding:8px 12px; border-radius:8px; font-size:14px; color:var(--muted)}
+  nav a.navlink.active, nav a.navlink:hover{background:rgba(0,120,255,0.08); color:var(--accent);}
+
+  /* Mobile toggle */
+  .toggle{
+    display:none; background:none; border:0; font-size:22px; cursor:pointer; color:var(--muted)
+  }
+
+  /* Hero */
+  .hero{
+    margin-top:86px; /* account for fixed nav */
+    display:grid;
+    grid-template-columns: 1fr 320px;
+    gap:20px;
+    align-items:start;
+  }
+
+  .card{
+    background:linear-gradient(180deg,var(--card), #ffffff);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:18px;
+    box-shadow: 0 6px 20px rgba(16,24,40,0.03);
+  }
+
+  .name{
+    font-size:clamp(26px,4vw,36px);
+    font-weight:800; margin:0 0 6px 0;
+    color:var(--text);
+  }
+  .meta{color:var(--muted); margin-bottom:12px}
+  .contact{display:flex; flex-wrap:wrap; gap:8px; font-size:14px; color:var(--muted)}
+  .chip{display:inline-block;background:var(--glass); border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size:13px; color:var(--muted)}
+
+  /* Section headings */
+  section{margin:22px 0}
+  h2{font-size:20px; margin:0 0 12px 0; padding-left:12px; border-left:4px solid var(--accent)}
+  h3{margin:6px 0 10px 0; font-size:16px}
+
+  /* grids */
+  .two-col{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px}
+  .grid{display:grid; grid-template-columns: 100px 1fr; gap:10px 18px; align-items:start}
+
+  .meta-small{font-size:13px; color:var(--muted)}
+  ul{margin:8px 0 0 18px}
+
+  /* services list */
+  .services{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px}
+  .service{
+    background:linear-gradient(180deg, rgba(0,120,255,0.04), rgba(255,255,255,0.02));
+    border:1px solid transparent;
+    padding:12px; border-radius:10px; font-weight:600; color:var(--muted);
+    display:flex; gap:10px; align-items:center;
+  }
+  .service svg{width:24px;height:24px; opacity:0.9; flex:0 0 24px}
+
+  /* item card */
+  .item{padding:14px; border-radius:10px; border:1px solid var(--border); background:linear-gradient(180deg,#ffffff, #fbfdff)}
+
+  /* projects list */
+  .projects{display:grid; gap:12px}
+
+  /* footer */
+  footer{margin-top:20px; text-align:center; color:var(--muted); font-size:13px; padding:18px 0}
+
+  /* small screens */
+  @media (max-width:980px){
+    .hero{grid-template-columns:1fr}
+    nav{left:12px; right:12px; transform:none; width:auto}
+    .toggle{display:block}
+    nav ul{display:none; position:absolute; right:12px; top:64px; background:white; padding:10px; flex-direction:column; border-radius:10px; box-shadow: 0 8px 30px rgba(16,24,40,0.08)}
+    nav ul.show{display:flex}
+  }
+
+  /* small micro adjustments */
+  .muted{color:var(--muted)}
+  .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
+
+  /* subtle entrance animations */
+  .fade-up {opacity:0; transform:translateY(12px); animation:fadeUp .6s forwards}
+  @keyframes fadeUp {to{opacity:1; transform:none}}
+
+  /* print */
+  @media print{
+    nav{display:none}
+    body{background:white}
+    .wrap{max-width:800px}
+    .hero{grid-template-columns:1fr}
+    .service, .item{border:1px solid #ddd}
+  }
+</style>
+</head>
+<body>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">RP</div>
+      <div>
+        <h1 style="margin:0;font-size:15px">RAKESH PRAJAPAT</h1>
+        <p style="margin:0;color:var(--muted);font-size:12px">Freelancer • Full Stack Developer</p>
+
+      </div>
+    </div>
+
+    <button class="toggle" aria-expanded="false" aria-controls="menu" onclick="toggleMenu()">☰</button>
+
+    <ul id="menu" role="menubar">
+      <li role="none"><a role="menuitem" class="navlink" href="#about">Profile</a></li>
+      <li role="none"><a role="menuitem" class="navlink" href="#skills">Skills</a></li>
+      <li role="none"><a role="menuitem" class="navlink" href="#services">Services</a></li>
+      <li role="none"><a role="menuitem" class="navlink" href="#experience">Experience</a></li>
+      <li role="none"><a role="menuitem" class="navlink" href="#projects">Projects</a></li>
+      <li role="none"><a role="menuitem" class="navlink" href="#education">Education</a></li>
+      <li role="none"><a role="menuitem" class="navlink" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap" id="top">
+    <!-- HERO / HEADER -->
+    <div class="hero">
+      <div class="card fade-up">
+        <div class="name">RAKESH PRAJAPAT</div>
+        <p class="chip">Full Stack Developer | 8.6 Years of Experience</p>
+        <div class="meta">Freelancer Full Stack Developer — Indore, India
+        </div>
+        <section id="about" aria-label="Profile Summary" style="margin-top:12px">
+          <h2>Profile Summary</h2>
+          <p><strong>Full Stack Developer | 8.6 Years of Experience</strong> Skilled in designing and building scalable web applications, managing projects end-to-end, and leading teams to deliver high-quality solutions. Expertise in UI development (React.js, Angular), backend development (Node.js, PHP, CodeIgniter, WordPress), and cloud-based deployment (AWS, Docker).</p>
+
+          <h3>Core Experience:</h3>
+          <ul>
+            <li><strong>UI Development:</strong> 3.6+ years with React.js &amp; Angular</li>
+            <li><strong>Backend Development:</strong> 4+ years with Node.js</li>
+            <li><strong>Web Development:</strong> 4+ years with Advanced PHP, WordPress, CodeIgniter</li>
+            <li><strong>Project Coordination:</strong> 2.6+ years in leading teams, managing timelines, and handling client communications</li>
+          </ul>
+
+          <h3>Key Skills:</h3>
+          <ul>
+            <li><strong>Backend:</strong> Node.js, Express, PHP (Advanced), CodeIgniter, WordPress</li>
+            <li><strong>Frontend:</strong> React.js, JavaScript (ES6+), HTML5, CSS3, Responsive UI/UX</li>
+            <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis, Memcached</li>
+            <li><strong>Security &amp; Authentication:</strong> JWT, OAuth2, Auth0, AWS Cognito</li>
+            <li><strong>Cloud &amp; DevOps:</strong> AWS, Azure, Docker, Kubernetes, CI/CD pipelines</li>
+            <li><strong>Third-Party Integration:</strong> Facebook, Google, YouTube, Twitter, Firebase</li>
+            <li><strong>Version Control &amp; Tools:</strong> Git, GitHub, Jira, Agile/Scrum</li>
+            <li><strong>Other Expertise:</strong> RESTful APIs, GraphQL, Payment Gateway Integration (Stripe, PayPal, Razorpay)</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- right column (quick contact + skills snapshot) -->
+      <aside class="card fade-up" style="display:flex;flex-direction:column;gap:12px">
+        <div>
+          <div class="meta-small">Contact</div>
+          <p>  &nbsp;&nbsp;&nbsp;
+</p>
+          <div class="contact" style="margin-top:8px">
+              <div><a href="mailto:contact@rakeshprajapat.in">contact@rakeshprajapat.in</a></div>
+            <div class="mono">+917987462322</div>
+            <div class="meta-small">Indore, India</div>
+          </div>
+        </div>
+
+        <div>
+        
+          <div style="display:flex;flex-direction:column;gap:6px;margin-top:8px">
+            <div class="chip"><a href="https://www.facebook.com/yourusername"  target="_blank" alt="facebook" rel="noopener noreferrer">
+  <i class="fab fa-facebook" width="24" height="24"></i>
+Facebook Profile</a></div>
+            <div class="chip"><a href="https://www.linkedin.com/in/rakesh-prajapat-7502a422b/" target="_blank" rel="noopener noreferrer">
+ <i class="fab fa-linkedin" style="width:24px; height:24px;"></i>Linkedin Profile
+</a></div>
+ <div class="chip"><a href="https://github.com/rakeshbcamca1983" target="_blank" rel="noopener noreferrer">
+<i class="fab fa-github" style="width:24px; height:24px;"></i>Github Profile
+</a></div>
+            
+          </div>
+        </div>
+
+        <div style="margin-top:auto">
+          <a href="#contact" class="chip" style="display:inline-block;text-align:center;width:100%;">Contact / Hire</a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Core Experience Section (cards) -->
+    <section aria-label="Core Experience" class="fade-up">
+      <h2>Core Experience</h2>
+      <div class="two-col" style="margin-top:10px">
+        <div class="item">
+          <h3>UI Development</h3>
+          <div class="meta-small">3+ years — React.js &amp; Angular</div>
+        </div>
+        <div class="item">
+          <h3>Backend Development</h3>
+          <div class="meta-small">3+ years — Node.js</div>
+        </div>
+        <div class="item">
+          <h3>Web Development</h3>
+          <div class="meta-small">4+ years — Advanced PHP, WordPress, CodeIgniter</div>
+        </div>
+        <div class="item">
+          <h3>Project Coordination</h3>
+          <div class="meta-small">2+ years — leading teams, timelines, client communications</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" aria-label="Technical Skills" class="fade-up">
+      <h2>Technical Skills</h2>
+      <div class="item" style="padding:16px">
+        <p><strong>Frontend:</strong> React.js, Angular, JavaScript (ES6+), HTML5, CSS3, Responsive UI/UX</p>
+        <p><strong>Backend:</strong> Node.js, Express, PHP (Advanced), CodeIgniter, WordPress</p>
+        <p><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis, Memcached</p>
+        <p><strong>Cloud &amp; DevOps:</strong> AWS, Azure, Docker, Kubernetes, CI/CD pipelines</p>
+        <p><strong>Version Control &amp; Tools:</strong> Git, GitHub, Jira, Agile/Scrum</p>
+        <p><strong>Other Expertise:</strong> RESTful APIs, GraphQL, Payment Gateway Integration (Stripe, PayPal, Razorpay), JWT/OAuth Authentication</p>
+      </div>
+    </section>
+
+    <!-- Services Provided -->
+    <section id="services" aria-label="Services Provided" class="fade-up">
+      <h2>Services Provided</h2>
+      <div class="services" style="margin-top:10px">
+        <div class="service"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Custom Software Development</div>
+        <div class="service"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2"/></svg>Software Testing</div>
+        <div class="service"><svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Web Development</div>
+        <div class="service"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Android Development</div>
+        <div class="service"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>iOS Development</div>
+        <div class="service"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.2"/></svg>Web Design</div>
+        <div class="service"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M8 21h8" stroke="currentColor" stroke-width="1.2"/></svg>Mobile App Development</div>
+        <div class="service"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M3 12h18" stroke="currentColor" stroke-width="1.2"/></svg>Training</div>
+        <div class="service"><svg viewBox="0 0 24 24" fill="none"><path d="M3 3h18v18H3z" stroke="currentColor" stroke-width="1.2"/></svg>Graphic Design</div>
+        <div class="service"><svg viewBox="0 0 24 24" fill="none"><path d="M3 5h18v4H3zM3 11h18v8H3z" stroke="currentColor" stroke-width="1.2"/></svg>WordPress Design</div>
+      </div>
+    </section>
+
+    <!-- Professional Experience & Responsibilities -->
+    <section id="" aria-label="Professional Experience" class="fade-up">
+      <h2>Roles &amp; Responsibilities</h2>
+      <ul>
+        <li>Built scalable and responsive web applications, delivering improved user experience.</li>
+        <li>Designed and optimized RESTful APIs and GraphQL endpoints for efficient data exchange.</li>
+        <li>Implemented caching strategies (Redis, Memcached) to enhance application speed and performance.</li>
+        <li>Designed and maintained scalable database structures for multi-tenant applications.</li>
+        <li>Improved query performance by 30% through indexing and query optimization.</li>
+        <li>Deployed and managed applications using Docker, Kubernetes, and cloud platforms (AWS/Azure).</li>
+        <li>Implemented CI/CD pipelines for automated build, testing, and deployment processes.</li>
+        <li>Integrated third-party APIs and payment gateways (Stripe, PayPal, Razorpay).</li>
+        <li>Implemented secure authentication &amp; authorization using JWT and OAuth2.</li>
+        <li>Troubleshot and resolved production issues, maintaining 99.9% application uptime.</li>
+        <li>Wrote clean, maintainable, and well-documented code following best practices.</li>
+        <li>Collaborated with cross-functional teams for efficient API contracts and smooth delivery.</li>
+      </ul>
+    </section>
+
+    <!-- Key Achievements -->
+    <section class="fade-up">
+      <h2>Key Achievements</h2>
+      <ul>
+        <li><strong>Project Leadership:</strong> Successfully led multiple full-stack projects from planning to deployment.</li>
+        <li><strong>Client Communication:</strong> Handled live client interactions, resolving queries with clarity.</li>
+        <li><strong>Performance Optimization:</strong> Enhanced system efficiency with optimized queries, caching.</li>
+        <li><strong>Team Collaboration:</strong> Coordinated with developers, designers, and delivered projects on time.</li>
+      </ul>
+    </section>
+
+    <!-- Skills (detailed) -->
+    <section class="fade-up">
+      <h2>Skills</h2>
+      <div class="two-col" style="margin-top:10px">
+        <div class="item">
+          <p><strong>Programming Language:</strong> PHP, JavaScript</p>
+          <p><strong>Front-end:</strong> React.js</p>
+          <p><strong>Back-end:</strong> PHP, Node.js</p>
+          <p><strong>CMS:</strong> WordPress</p>
+        </div>
+        <div class="item">
+          <p><strong>Testing Tools:</strong> Cypress, Jasmine</p>
+          <p><strong>Cloud Computing:</strong> AWS, Docker</p>
+          <p><strong>CI/CD:</strong> Jenkins, Netlify</p>
+          <p><strong>PMS:</strong> GitHub, GitLab, Azure, Jira</p>
+          <p><strong>Skills:</strong> Project management, Time management, Strategic Planning, Client Communication</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="fade-up">
+      <h2>Education History</h2>
+      <div class="grid">
+        <div class="meta-small">2010</div><div><strong>M.C.A</strong>, RGTU Bhopal — 67.18%</div>
+        <div class="meta-small">2006</div><div><strong>B.C.A</strong>, MCRPV Bhopal — 69.25%</div>
+        <div class="meta-small">2002</div><div><strong>12th</strong>, MP Board Bhopal — 58%</div>
+        <div class="meta-small">2000</div><div><strong>10th</strong>, MP Board Bhopal — 62.18%</div>
+      </div>
+    </section>
+
+    <!-- Employment History -->
+    <section class="fade-up" id="experience">
+  <h2>Employment History</h2>
+
+  <!-- Freelancer -->
+  <div class="item">
+    <h3>Freelancer &amp; Service Provider <span class="meta-small">Full Stack Developer &amp; Project Coordinator</span></h3>
+    <p>
+      As a seasoned Full Stack Developer leading a team of skilled professionals, I specialize in designing, developing, and deploying scalable web applications that drive measurable results. With expertise across front-end and back-end technologies, I bring deep experience in databases, APIs, and software development principles.
+    </p>
+
+    <h4>Experience Highlights:</h4>
+    <ul>
+      <li>Developed and deployed multiple full-stack web applications using modern frameworks and technologies.</li>
+      <li>Collaborated with clients to understand requirements and deliver high-quality, scalable solutions.</li>
+      <li>Implemented responsive design for seamless cross-device performance and accessibility.</li>
+      <li>Optimized code for improved performance, security, and maintainability.</li>
+    </ul>
+
+    <h4>Benefits of Working with Me:</h4>
+    <ul>
+      <li><strong>Flexibility:</strong> Available for part-time or full-time engagements with flexible hours.</li>
+      <li><strong>Expertise:</strong> Strong technical background and up-to-date knowledge of industry trends.</li>
+      <li><strong>Communication:</strong> Clear and consistent communication throughout project lifecycle.</li>
+      <li><strong>Quality:</strong> Focused on delivering reliable, high-performance, and maintainable solutions.</li>
+    </ul>
+
+    <p><strong>Let’s Connect:</strong> If you’re seeking a skilled Full Stack Developer for your project, feel free to reach out to discuss your requirements.</p>
+    <div class="meta-small">Jan 2025 – Present</div>
+  </div>
+
+  <!-- CDN Software Solution Pvt Ltd -->
+  <div class="item">
+    <h3>CDN Software Solution Pvt Ltd <span class="meta-small">Full Stack Developer &amp; Project Coordinator</span></h3>
+    <ul>
+      <li>Developed scalable and responsive web applications, improving overall UX and client satisfaction.</li>
+      <li>Designed and optimized RESTful APIs and GraphQL endpoints for high-performance data exchange.</li>
+      <li>Implemented caching (Redis, Memcached) and database optimizations to boost performance.</li>
+      <li>Deployed applications via Docker, Kubernetes, and AWS/Azure cloud environments.</li>
+      <li>Built CI/CD pipelines for automated build, test, and deployment processes.</li>
+      <li>Integrated third-party APIs and payment gateways (Stripe, PayPal, Razorpay).</li>
+      <li>Implemented authentication and authorization using JWT and OAuth2.</li>
+    </ul>
+    <p><strong>Skills:</strong> Node.js · React.js · MySQL · REST APIs · AngularJS · JavaScript · Project Management</p>
+    <div class="meta-small">Aug 2021 – Dec 2024</div>
+  </div>
+
+  <!-- Ira Softwares -->
+  <div class="item">
+    <h3>Ira Softwares <span class="meta-small">Sr. Frontend Web Developer</span></h3>
+    <ul>
+      <li>Developed and maintained Angular-based applications for healthcare and service platforms.</li>
+      <li>Collaborated closely with clients to gather and refine technical requirements.</li>
+      <li>Implemented JWT/OAuth2 authentication systems and ensured security compliance.</li>
+      <li>Resolved production issues to maintain 99.9% uptime across critical systems.</li>
+      <li>Delivered responsive and cross-browser compatible front-end solutions.</li>
+    </ul>
+    <p><strong>Skills:</strong> Node.js · MySQL · REST APIs · PHP · CodeIgniter · Angular · Laravel</p>
+    <div class="meta-small">Sep 2018 – Aug 2021</div>
+  </div>
+
+  <!-- Best Solution -->
+  <div class="item">
+    <h3>Best Solution <span class="meta-small">Sr. Frontend Web Developer</span></h3>
+    <ul>
+      <li>Executed front-end development with Angular to enhance UI/UX experience.</li>
+      <li>Managed client interactions and coordinated project timelines efficiently.</li>
+      <li>Conducted code reviews and maintained 99.9% uptime for critical business systems.</li>
+      <li>Integrated encryption and security protocols to safeguard user data.</li>
+    </ul>
+    <p><strong>Skills:</strong> MySQL · PHP · Payment Systems · Project Management</p>
+    <div class="meta-small">Apr 2017 – Aug 2018</div>
+  </div>
+
+  <!-- Parkhya Solution Pvt Ltd -->
+  <div class="item">
+    <h3>Parkhya Solution Pvt Ltd <span class="meta-small">Web Developer</span></h3>
+    <ul>
+      <li>Developed web applications using PHP, CodeIgniter, and WordPress frameworks.</li>
+      <li>Maintained websites and implemented new features based on client requirements.</li>
+      <li>Engineered optimized SQL queries and database architectures for 10+ web projects.</li>
+      <li>Created RESTful web services for seamless third-party system integration.</li>
+      <li>Collaborated with design and QA teams to ensure timely and quality delivery.</li>
+    </ul>
+    <p><strong>Skills:</strong> PHP · WordPress · RESTful Web Services · Shopify · SQL</p>
+    <div class="meta-small">Oct 2015 – Mar 2017</div>
+  </div>
+</section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="fade-up">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="item">
+          <h3>Hybrid LMS — <span class="meta-small">Cdn Software Solution Pvt Ltd</span></h3>
+          <div class="meta-small">Technologies: React JS, Node JS · Duration: Dec 2023 to Aug 2024 · Role: Full Stack Developer</div>
+          <p>Involved in writing UI code for building LMS system using React Hooks, Redux.</p>
+          <p><em>Project Description:</em> Online and offline training for organizational employees with modules for super admin, admin, and employee; performance management during and after training.</p>
+        </div>
+
+        <div class="item">
+          <h3>Worlds care Center's — <span class="meta-small">Cdn Software Solution Pvt Ltd</span></h3>
+          <div class="meta-small">Technologies: React JS, Node JS · Duration: Jun 2024 to Nov 2024 · Role: Full Stack Developer</div>
+          <p>Involved in writing UI components using React Functional Components.</p>
+          <p><em>Project Description:</em> Training volunteers for camps in different places; delivers Medical Clinics and Resiliency Workshops with families and children in Ukraine's resettlement villages.</p>
+        </div>
+
+        <div class="item">
+          <h3>Bonanza — <span class="meta-small">Cdn Software Solution Pvt Ltd</span></h3>
+          <div class="meta-small">Technologies: PHP, MySQL · Duration: Apr 2024 to Aug 2024 · Role: Web Developer</div>
+          <p>Involved in writing PHP code for Bonanza system using Advanced PHP concepts.</p>
+          <p><em>Project Description:</em> Hotel booking reservation for visitors for events in different places; room selection based on schedule and preferences.</p>
+        </div>
+
+        <div class="item">
+          <h3>N_Connect — <span class="meta-small">Cdn Software Solution Pvt Ltd</span></h3>
+          <div class="meta-small">Technologies: Node.js, Express.js, React.js · Duration: Aug 2023 to Feb 2024 · Role: Full Stack Developer</div>
+          <p><em>Project Description:</em> Vendor/client connectivity platform with role-based access, resource permissions, and product booking/reservations across locations.</p>
+        </div>
+
+        <div class="item">
+          <h3>Ofload — <span class="meta-small">Cdn Software Solution Pvt Ltd</span></h3>
+          <div class="meta-small">Technologies: React, Laravel, Cypress · Duration: Apr 2022 to Dec 2022 · Roles: Developer, Project Coordinator</div>
+          <p>Implemented REST APIs using Laravel for Ofload application.</p>
+          <p><a href="https://www.ofload.com.au/" target="_blank" rel="noopener">https://www.ofload.com.au/</a></p>
+          <p><em>Project Description:</em> Courier service platform for Shippers and Carriers; admin and super admin management; truck &amp; shipment management.</p>
+        </div>
+
+        <div class="item">
+          <h3>Corticacare Site — <span class="meta-small">Cdn Software Solution Pvt Ltd</span></h3>
+          <div class="meta-small">Technologies: React, Node.js, Contentful · Duration: Nov 2021 to Apr 2022 · Roles: Developer, Team Lead, Project Coordinator</div>
+          <p>UI tasks, requirement explanation, task distribution; Node.js REST APIs.</p>
+          <p><a href="https://www.corticacare.com/" target="_blank" rel="noopener">https://www.corticacare.com/</a></p>
+          <p><em>Project Description:</em> Patient scheduling and treatment platform; used Contentful, Salesforce API, Netlify, and React.</p>
+        </div>
+
+        <div class="item">
+          <h3>Video Telligent — <span class="meta-small">Cdn Software Solution Pvt Ltd</span></h3>
+          <div class="meta-small">Technologies: React, Node.js, MySQL · Duration: Nov 2021 to June 2022 · Roles: Developer, Team Leader, Project Coordinator</div>
+          <p>UI tasks, requirements explanation, client meetings per sprint; Node.js REST APIs.</p>
+          <p><a href="https://videotelligent.com/" target="_blank" rel="noopener">https://videotelligent.com/</a></p>
+        </div>
+
+        <div class="item">
+          <h3>Secure Health — <span class="meta-small">Ira Softwares</span></h3>
+          <div class="meta-small">Technologies: Angular 7, TypeScript 3.1, Node.js · Duration: Nov 2018 to Aug 2021 · Roles: Programmer, Project Coordinator</div>
+          <p>Client communication, Angular tasks, developer guidance.</p>
+          <p><em>Project Description:</em> Patient management and live consultation via kiosks in public places like airports and railway stations.</p>
+        </div>
+
+        <div class="item">
+          <h3>Cart Recovery System — <span class="meta-small">Ira Softwares</span></h3>
+          <div class="meta-small">Technologies: CodeIgniter, MySQL · Duration: Oct 2018 to Mar 2019 · Roles: Developer, Support</div>
+          <p>PHP development using CodeIgniter framework for cart recovery.</p>
+        </div>
+
+        <div class="item">
+          <h3>Blue Mosaic Dialer — <span class="meta-small">Ira Softwares</span></h3>
+          <div class="meta-small">Technologies: CodeIgniter, MySQL, jQuery, Ajax, Asterisk, JavaScript, HTML5, Bootstrap · Duration: Apr 2019 to Nov 2019 · Role: Developer</div>
+          <p>PHP development to implement Blue Mosaic dialer using MVC framework.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Detail -->
+    <!--<section class="fade-up">
+      <h2>Personal Detail</h2>
+      <div class="grid">
+        <div class="meta-small">Date Of Birth</div><div>25/03/1983</div>
+        <div class="meta-small">Gender</div><div>Male</div>
+        <div class="meta-small">Father’s Name</div><div>Shri N.L. Prajapat</div>
+        <div class="meta-small">Marital Status</div><div>Married</div>
+        <div class="meta-small">Languages Known</div><div>English, Hindi</div>
+      </div>
+    </section>-->
+
+    <!-- Declaration -->
+    <!-- <section class="fade-up">
+      <h2>Declaration</h2>
+      <p>I hereby declare that the data provided herein is true as far my knowledge and can produce the required documents if asked for.</p>
+      <p class="meta-small">(RAKESH PRAJAPAT)</p>
+    </section> -->
+
+    <!-- Contact / Footer -->
+    <section id="contact" class="fade-up">
+      <h2>Contact</h2>
+      <div class="two-col">
+        <div class="item">
+          <h3>Get in touch</h3>
+             <a href="https://www.linkedin.com/in/rakesh-prajapat-7502a422b/" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="24" height="24" />
+  Connect on LinkedIn
+</a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.facebook.com/yourusername"  target="_blank" alt="facebook" rel="noopener noreferrer">
+  <i class="fab fa-facebook" width="24" height="24"></i>Connect On Facebook
+</a>
+          <p>Email: <a href="mailto:contact@rakeshprajapat.in">contact@rakeshprajapat.in</a></p>
+          <p>Phone: <span class="mono">+917987462322</span></p>
+          <p>Location: Indore, India</p>
+        </div>
+
+        <div class="item">
+          <h3>Quick Links</h3>
+          <p><a href="#projects">Projects</a> • <a href="#services">Services</a> • <a href="#education">Education</a></p>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer>
+  <div style="margin-bottom:6px">
+    &copy; <span id="year"></span> Rakesh Prajapat. All Rights Reserved.
+  </div>
+  <div class="meta-small">
+    Designed and Developed by <strong>Rakesh Prajapat</strong> • Modern Portfolio • Print Friendly
+  </div>
+</footer>
+  </main>
+
+<script>
+  // Mobile menu toggle
+  function toggleMenu(){
+    const menu = document.getElementById('menu');
+    const btn = document.querySelector('.toggle');
+    menu.classList.toggle('show');
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+  }
+
+  // Highlight active menu link on scroll
+  const navLinks = document.querySelectorAll('a.navlink');
+  const sections = Array.from(document.querySelectorAll('main section[id], main section')).filter(s => s.id || s.querySelector('h2'));
+
+  function onScroll(){
+    const y = window.scrollY + 120;
+    navLinks.forEach(l => l.classList.remove('active'));
+    for (let i = sections.length - 1; i >= 0; i--){
+      const sec = sections[i];
+      const top = sec.offsetTop;
+      if(y >= top){
+        const id = sec.id || sec.querySelector('h2')?.textContent?.trim()?.toLowerCase();
+        if(!id) break;
+        const link = document.querySelector('a.navlink[href="#' + sec.id + '"]');
+        if(link) { link.classList.add('active'); break; }
+      }
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // Entrance animations: apply fade-up class with small delays
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const fades = document.querySelectorAll('.fade-up');
+    fades.forEach((el, idx) => {
+      el.style.animationDelay = (idx * 80) + 'ms';
+    });
+  });
+
+  // Close mobile menu after clicking a link
+  document.querySelectorAll('#menu a').forEach(a=>{
+    a.addEventListener('click', ()=> {
+      const menu = document.getElementById('menu');
+      if(menu.classList.contains('show')) toggleMenu();
+    });
+  });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rakesh Prajapat",
+  "url": "https://rakeshprajapat.in/",
+  "sameAs": [
+    "https://www.linkedin.com/in/rakesh-prajapat-7502a422b/"
+  ],
+  "jobTitle": "Full Stack Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelancer"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rakesh Prajapat",
+  "url": "https://www.facebook.com/profile.php?id=100077760160657",
+  "sameAs": [
+    "https://www.facebook.com/yourprofileusername",
+    "https://www.linkedin.com/in/rakeshprajapat",
+    "https://github.com/rakeshprajapat"
+  ]
+}
+</script>
+</body>
+</html>
